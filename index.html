@@ -89,6 +89,15 @@
 
             
         }
+        #img5{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+
+            
+        }
         .close{
             outline: none;
             border: none;
@@ -119,9 +128,25 @@
        #img4{
         display: none;
        }
+       #img5{
+        display: none;
+       }
        a{
         text-decoration: none;
         color: white;
+       }
+       .chegg{
+        color: rgb(52, 5, 5);
+        background: linear-gradient(90deg, rgba(255,236,0,1) 26%, rgb(53, 35, 1) 100%);
+        border-radius: 10px;
+        width:16rem;
+        padding: 1rem;
+        font-weight: bolder;
+        /* text-shadow: 2px 2px 7px black; */
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
        }
     </style>
     <script>
@@ -150,6 +175,12 @@
         }
         function closefunction4() {
             document.getElementById("img4").style.display = "none";
+        }
+        function openfunction5() {
+        document.getElementById("img5").style.display = "block";
+        }
+        function closefunction5() {
+            document.getElementById("img5").style.display = "none";
         }
     </script>
 </head>
@@ -180,7 +211,21 @@
                     <button class="close" onclick="closefunction4()"><span style="color: rgb(255, 255, 255);">X </span> Close</button>
                 </div>
             </div>
+            <div id="img5" >
+                <div class="view-img" >
+                    <img  src="./files/Chegg certificate_1.jpg" height="400px"/>
+                    <button class="close" onclick="closefunction5()"><span style="color: rgb(255, 255, 255);">X </span> Close</button>
+                </div>
+            </div>
+            <div class="chegg">
+                Chegg Certification
+                <div>
+                    <img src="/files/eye.png" alt="view" width="20px" onclick="openfunction5()">
 
+                    <a href="/files//cheggcertificate.pdf" download><img src="./files//down.png" alt=" download" width="20px"/></a>
+                </div>
+            </div>
+            <h3 style="color: rgb(255, 255, 255);">Monthly work :</h3>
             <div class="Certificates">
                 <span>January - 2023</span>
                 <divv>
